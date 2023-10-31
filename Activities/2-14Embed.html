@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2-14Embed</title>
+	<style>
+		#wrapper {width: 95%;
+				margin: auto;
+				background-color: #f2f2f2;
+				box-shadow: 5px 5px 5px #1e1e1e;}
+		h1 {text-align: center;
+			padding: 10px;
+			color: #3b945e;}
+	#middle {display: flex;
+			flex-direction: row;}
+	nav {flex: 2;
+		padding-top: 5px;}
+	main {flex: 5;
+		align-items: center;}
+	aside {flex: 3;}
+	#box1, #box2, #box3 {width: 95%;
+			height: 300px;
+			margin: 10px;}
+	iframe {width: 100%;
+			height: 100%;}
+	aside iframe {height: 200px;}
+	
+	nav ul {list-style-type: none;
+		margin: 0;
+		padding: 0;} 
+	nav a {text-decoration: none;
+			padding: 20px;
+			display: block;
+			background-color: #3b934e;
+			border-bottom: 1px solid #f2f2f2;
+			background-image: url(../Images/sprites.gif);
+			background-repeat: no-repeat;
+			background-position: right -100px;}
+	nav a:link {color: #f2f2f2;}
+	nav a:visited {color: #ff0000;}
+	nav a:hover {color: #0000ff;
+				background-color: #eaeaea;}
+	h3 {border-bottom: 1px solid #f2f2f2;
+		text-align: center;}
+	footer {font-size: 0.8em;
+			font-style: italic;
+			text-align: center;}
+	</style>
+</head>
+<body>
+<div id = "wrapper">
+<header>
+	<h1>Embedded Web Pages</h1>
+</header>
+<div id = "middle">
+<nav>
+	<ul>
+		<li><a href = "https://www.ggc.edu/" target = "GGC">GGC</a></li>
+		<li><a href = "2-14.html" target = "webpage">2-14</a></li>
+		<li><a href = "2-14Gallery.html" target = "webpage">Gallery</a></li>
+		<li><a href = "https://www.youtube.com/embed/pT9_HJr-nso" target = "video">Aquarium</a></li>
+		<li><a href = "https://www.youtube.com/embed/h7bAFnLskWg" target = "video">Aquascaping</a></li>
+	</ul>
+</nav>
+
+<main>
+	<div id = "box1">
+		<iframe src = "https://www.ggc.edu/" name = "GGC"></iframe>
+	</div>
+
+	<div id = "box2">
+		<iframe src = "2-14.html" name = "webpage"></iframe>
+	</div>
+	
+	<div id = "box3">
+		<iframe src = "https://www.youtube.com/embed/pT9_HJr-nso" name = "video"></iframe>
+	</div>
+</main>
+<aside>
+	<h3>GGC Video</h3>
+		<iframe src = "https://www.youtube.com/embed/0nge7aiGQc4"></iframe>
+</aside>
+</div>
+
+<footer>
+	Copyright &copy; Georgia Gwinnett College 2023
+</footer>
+
+</div>
+</body>
+</html>

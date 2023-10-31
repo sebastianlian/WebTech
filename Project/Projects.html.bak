@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Index</title>
+	<link href = "Project-1.css" rel = "stylesheet">
+</head>
+<body>
+<div id = "wrapper">
+<header>
+	<h1>Welcome to Sebastian's ITEC 2130 Web Tech Site!</h1>
+</header>
+<nav>
+<a href = "index.html">Home</a> &nbsp;&nbsp; 
+<a href = "Activities.html">In Class Activities</a> &nbsp;&nbsp; 
+<a href = "Labs.html">Labs</a>&nbsp;&nbsp; 
+<a href = "Projects.html">Projects</a>&nbsp;&nbsp; 
+</nav>
+<main>
+</main>
+
+<h2>Projects</h2>
+<div>
+<div class = "ulist">
+<ul>
+	<li><a href = "../Projects/Project-1.html" target = "_blank">Project 1</a></li>
+</ul>
+</div>
+
+<br><br>
+
+<footer>
+	<small>Copyright &copy; 2023 Sebastian Lian Carmagnola<br>
+	<a href = "malito:scarmagnola@ggc.com">scarmagnola@ggc.com
+	</a><br>
+	</small>
+</footer>
+</body>
+</html>

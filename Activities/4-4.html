@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4-4</title>
+</head>
+<body>
+<script>
+	alert("Welcome to JavaScript!");
+</script>	
+
+<script>
+	document.write("<h1>JavaScript 101</h1>");
+	document.write("<h2>Is JavaScript the same as JavaScript 101</h2>");
+</script>
+
+<button onclick = "yesButton()">Yes</button>
+<script>
+function yesButton() {
+	alert("No, they are different!");
+}
+</script>
+
+<button onclick = "noButton()">No</button>
+<script>
+function noButton() {
+	alert("You are correct!");
+}
+</script>
+<br>
+
+<h2>Sample code:</h2>
+<img id = "myImage" src = "../Images/JavaScript.jpg" style = "width: 300px; height: 200px;"><br>
+<button onclick = "document.getElementById('myImage').src = '../Images/JavaScript.jpg'">JavaScript</button>
+<button onclick = "document.getElementById('myImage').src = '../Images/Java.png'">Java</button>
+
+<h2>Handle event:</h2>
+<p><a href = "#" onmouseover = "alert('Yes!');">Do you know Java programming? (Move mouse over to see answer)</a></p>
+
+<p><a href = "#" onmouseout = "alert('Start learning it!');">Do you know JavaScript programming? (Move mouse out to see answer)</a></p>
+
+<img onmouseover = "bigImg(this)" onmouseout = "normalImg(this)" src = "../Images/tryJavaScript.jpg">
+<script>
+function bigImg(image) {
+	image.style.width = "440px";
+	image.style.height = "520px";
+	image.style.transition = "width 2s, height 2s";
+}
+
+function normalImg(image) {
+	image.style.width = "220px";
+	image.style.height = "260px";
+	image.style.transition = "width 2s, height 5s";
+}
+</script>
+
+<h2 onmouseover = "changeColor(this,'red')" onmouseout = "changeColor(this,'green')">JavaScript is easy!</h2>
+<script>
+function changeColor(text,newColor) {
+	text.style.color = newColor;
+}
+</script>
+
+<script>
+	var userName;
+	userName = prompt("Please enter your name:");
+	document.write("<h2>Hello " + userName + "</h2>");
+	var userColor;
+	userColor = prompt(userName + ", what color do you like for background?");
+	document.bgColor = userColor;
+	userColor = prompt(userName + ", what color do you like for font?");
+	document.fgColor = userColor;
+	var score;
+	score = prompt(userName + ", please enter your test score:");
+	if (score >= 90) {
+		document.write("<h3>" + userName + ", you got an A in the test!</h3>")
+	}
+	else {
+		document.write("<h3>" + userName + ", work harder!</h3>")
+	}
+</script>
+</body>
+</html>

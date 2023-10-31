@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3-21</title>
+</head>
+<body>
+<h2>Please take the following survey</h2>
+<form method = "post" action ="3-21.php">
+<h3>Your favorite web site:</h3>
+Website: <input type = "url" name = "website"><br>
+
+<h3>Your favorite color:</h3>
+Color: <input type = "text" list = "colorList" name = "favcolor"><br>
+<datalist id = "colorList">
+	<option label = "Red" value = "Red">
+	<option label = "Green" value = "Green">
+	<option label = "Blue" value = "Blue">
+</datalist>
+<br>
+
+<h3>Your least favorite color:</h3>
+Color: <input type = "color" name = "leastcolor"><br>
+
+<h3>Your favorite day:</h3>
+Date: <input type = "date" name = "day"><br>
+
+<h3>Your lucky number from 0 to 10:</h3>
+Number: <input type = "number" min = "0" max = "10" name = "lucky"><br>
+
+<h3>Your height:</h3>
+<input type = "number" name = "feet" min = "0" max = "7" value = "5" name = "feet"> feet
+<input type = "number" name = "inches" min = "0" max = "11"
+	oninput = "meters.value = parseInt(feet.value)*0.3 + 
+	parseInt(inches.value)*0.025" name = "inches"> inches
+=
+<output name = "meters" for = "feet inches"> </output> meters
+<br>
+
+<h3>Your satisfaction with this web site:</h3>
+0<input type = "range" min = "0" max = "10" name = "satisfaction">10<br>
+
+<h3>Your opinion about classes:</h3>
+<table border = "1">
+<colgroup>
+	<col style = "background-color: #eaeaea;">
+	<col span = "3" style = "background-color: yellow;">
+</colgroup>
+<tr>
+	<td>I like classes starting at 8am.</td>
+	<td><input type = "radio" id = "q1agree" name = "morning" value =
+	"Agree"><label for = "q1agree">Agree</label></td>
+	<td><input type = "radio" id = "q1neutral" name = "morning" value =
+	"Neutral"><label for = "q1neautral">Neutral</label></td>
+	<td><input type = "radio" id = "q1disagree" name = "morning" value =
+	"Disagree"><label for = "q1disagree">disagree</label></td>
+</tr>
+<tr>
+	<td>I like evening classes.</td>
+	<td><input type = "radio" id = "q2agree" name = "evening" value =
+	"Agree"><label for = "q2agree">Agree</label></td>
+	<td><input type = "radio" id = "q2neutral" name = "evening" value =
+	"Neutral"><label for = "q2neautral">Neutral</label></td>
+	<td><input type = "radio" id = "q2disagree" name = "evening" value =
+	"Disagree"><label for = "q2disagree">disagree</label></td>
+</tr>
+</table>
+<br>
+<h3>Comments:</h3>
+<textarea rows = "4" cols = "40"></textarea>
+<br>
+<input type = "submit">
+<input type = "reset">
+</form>
+</body>
+</html>

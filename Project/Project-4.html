@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project-4</title>
+	<link href = "Project-4.css" rel = "stylesheet">
+</head>
+
+<body>
+
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<script src = "https://www.w3schools.com/lib/w3.js">
+</script>
+<script>
+	$(document).ready(function() {
+		alert("Are you ready to realign with nature?");
+		$("#more").click(function() {
+			$("#").fadeToggle(1000);
+		});
+		
+		$("#more1").click(function() {
+			$("#activities").fadeToggle(1000);
+		});
+		
+		$("#more2").click(function() {
+			$("#dining").fadeToggle(1000);
+		});
+		
+		$("#more3").click(function() {
+			$("#drinks").fadeToggle(1000);
+		});
+		
+		$("#hide").click(function() {
+			$("#ps").hide(1000);
+		});
+		$("#show").click(function() {
+			$("#ps").show(1000);
+		});
+		
+		$("#flip").click(function() {
+			$("#panel").slideToggle(1000);
+		});
+		
+	});
+</script>
+
+<div id = "wrapper">
+	<header>
+		<h1>Welcome to the Adirondacks</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>About
+				<ul>
+					<li><a href = "#about"> About</a></li>
+					<li><a href = "#climate">Climate</a></li>
+					<li><a href = "#experiences">Experiences</a></li>
+					<li><a href = "#lodging">Lodging</a></li>
+				</ul>
+			</li>
+			<li><a href = "Project4-Gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+
+	<main>
+	<h2>About</h2>
+	
+	<div id = "about">
+		<p>Located in Upstate New York, the Adirondack Park is best known for its expansive pristine forests, lakes, rivers, and outdoor recreation opportunities. Unlike a national park, the Adirondack Park has no entrance and no entry fee, as it not only contains public land, but private lands as well where people live year-round.
+		<br><br>
+		There are more than 200 lakes around the mountains, including Lake George, Lake Placid, and Lake Tear of the Clouds, which is the source of the Hudson River. The Adirondack Region is also home to hundreds of mountain summits, with some reaching heights of 5,000 feet or more.
+		</p>
+	</div>
+
+	<h2>Climate</h2>
+		<div id = "climate">
+		<p>
+		The climate is strongly continental, with high humidity and precipitation year-round. The Adirondacks typically experience pleasantly warm, rainy weather in the summer (June–August), with temperatures in the range of 66–73 °F. 
+		<br><br>
+		Summer evenings in the Adirondacks are chilly, with temperatures ranging on average between 45–54 °F.
+		<br><br>
+		Winters (December–March) are long, cold, snowy and harsh, with temperatures ranging from 18 to 23 °F. Winter nights are frigid, with temperatures between −2 and 4 °F.
+		<br><br>
+		Spring (April–May) and fall (September–November) are short transitional seasons.
+		</p>
+		</div>
+
+	<h2>Experiences</h2>
+		<div id = "experiences">
+			<p>Activities for every season!
+				<a id = "more1" href = "#">More</a></p>
+			<p id = "activities">
+				Winter Camping<br>
+				Cross-Country Skiing<br>
+				Snowshoeing<br>
+				Snowmobiling Trails<br>
+				Backcountry Camping<br>
+				Montain Biking<br>
+				Hiking<br>
+				Bird Watching<br>
+				Fishing<br>
+				Water Rafting<br>
+				Paddling<br>
+				Kayaking<br>
+				Boat Tours<br>
+				Scenic Drives<br>
+				Breweries & Wineries<br>
+			</p>
+
+			<p>Dining options for any palate!
+				<a id = "more2" href = "#">More</a></p>
+			<p id = "dining">
+				Lone Bull Pancake & Steakhouse<br>
+				Downtown Dinner<br>
+				Gary's Dinner<br>
+				Bistro LeRoux<br>
+				Jeb's Restaurant<br>
+				Latitude 44<br>
+				Tamarack Cafe & Movie House<br>
+				Skyline Ice Cream<br>
+				The Good Bite Kitchen<br>
+				Green Goddess' Scape Cafe<br>
+			</p>
+
+			<p>Pick your poison!
+				<a id = "more3" href = "#">More</a></p>
+			<p id = "drinks">
+				Adirondak Pub & Brewery<br>
+				Adirondack Winery<br>
+				Mean Max Brew Works<br>
+			</p>
+
+			<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+			</script>
+			
+			<script src = "https://www.w3schools.com/lib/w3.js">
+			</script>
+			
+			<script>
+					$("#flip").click(function() {
+						$("#panel").slideToggle(1000);
+					});
+				});
+			</script>
+
+			<div id = "flip">Click to see top 3 activites and restraunts!</div>
+				<div id = "panel">
+					<img class = "pics" src = "../Images/canoeing.jpg">
+					<img class = "pics" src = "../Images/skiing.jpg">
+					<img class = "pics" src = "../Images/fishing.jpeg">
+					<img class = "pics" src = "../Images/thecottage.jpg">
+					<img class = "pics" src = "../Images/popcorn.jpg">
+					<img class = "pics" src = "../Images/theviewrest.jpg">
+				</div>
+			<script>
+				w3.slideshow(".pics", 2000);
+			</script>
+		</div>
+
+	<h2>Lodging</h2>
+	<div id = "lodging">
+		<dl>
+			<dt>Lodging options to suite all preferences!</dt>
+					<dt><a href = "https://www.lakegeorgecampingvillage.com/"><u>Adirondack Camping Village</u></a></dt>
+						<dd>Adirondack Camping Village is one of Lake George's best kept secrets. Located only 3 minutes from Lake George and Lake George Village, yet set in the woods of the Adirondack Mountains. Large secluded private tent camping; RV sites with full hookups; camping cabins, and pet friendly, pets must be leashed. Amenities include heated pool, a wading pool, camp store, game room, playground, horseshoes, basketball, pickleball, volleyball, shuffleboard, hay rides, nightly movie, wi-fi, and coin laundromat.</dd>
+					<dt><a href = "https://www.thewhitefacelodge.com/"><u>Whiteface Lodge Resort & Spa</u></a></dt>
+						<dd>in Lake Placid is a modern luxury resort built in the Adirondack Great Camp style.</dd>
+					<dt><a href = "https://lakepleasantlodge.com/"><u>Lake Pleasant Lodge</u></a></dt>
+						<dd>Nestled on the shores of beautiful Lake Pleasant in the heart of the Village of Speculator lies one of the most amazing lakefront lodging opportunities in all of the Adirondacks. The Lake Pleasant Lodge (formerly known as the Lake Pleasant Inn) offers luxurious rooms and suites with spectacular and breathtaking views of the lake and mountains.</dd>
+					<dt><a href = "https://www.whitepinecamp.com/"><u>White Pine Camp</u></a></dt>
+						<dd>in Paul Smiths. Close enough to everything but yet far enough away to feel secluded! Includes amenities such as kayaking, pool room, ice fishing, tea room and old-fashioned bowling alley.</dd>
+		</dl>
+</div>
+
+</main>
+</body>
+
+<p>&nbsp;</p>
+
+<footer>
+	<small>Copyright &copy; 2023 Sebastian Lian Carmagnola<br>
+	<a href = "malito:scarmagnola@ggc.com">scarmagnola@ggc.com</a><br>
+	</small>
+</footer>
+
+</html>

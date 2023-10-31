@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2-14Gallery</title>
+	<style>
+		h1 {text-alight: center;
+		font-color: #3b945e;}
+		img {width: 150px;
+			height: 100px;}
+		ul {list-style-type: none;
+			width: 400px;}
+		li {display: inline-block;
+			float: left;
+			padding: 10px;}
+		.bigImg {width: 300px;
+				height: 200px;}
+		span {display: none;}
+		a:hover span {display: block;
+					position: absolute;
+					top: 100px;
+					left: 500px;}
+		a {text-decoration: none;
+			text-align: center;
+			color: #3b945e;
+			font-style: italic;}
+	</style>
+</head>
+<body>
+<h1>Image Gallery</h1>
+<ul>
+	<li><a a href = "../Images/vr.jpg"><img src = "../Images/vr.jpg"><span><img class = "bigImg" src = "../Images/vr.jpg"><br>Virtual reality</span></a></li>
+	<li><a a href = "../Images/flute.jpg"><span><img class = "bigImg" src = "../Images/flute.jpg"><img src = "../Images/flute.jpg"><br>Playing flute</span></a></li>
+	<li><a a href = "../Images/weightlift.jpg"><span><img class = "bigImg"src = "../Images/weightlift.jpg"><img src = "../Images/weightlift.jpg"><br>Weight Lifting</span></a></li>
+	<li><a a href = "../Images/skate.jpg"><span><img class = "bigImg"src = "../Images/skate.jpg"><img src = "../Images/skate.jpg"><br>Skating</span></a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {background-color: #000000; 
+	font-family: "Monaco", monospace;
+	background-image: url(../Images/blackdots.gif);
+	background-repeat: repeat;
+	background-position: center;
+	background-attachment: fixed;
+	cursor: url(../Images/mf.png), auto;}
+img {max-width: 100%;
+	max-height: 100%;
+	display: block;}
+	.self {border: 5px solid gold;
+			background-color: gold;}
+dt {font-weight: bold;
+	letter-spacing: 3px;
+text-transform: uppercase;}
+.top {text-align: center;
+	text-color: #ffffff;
+	text-transform: uppercase;}
+.darthvader {list-style-image: url(../Images/darthvader.png);}
+.stormtrooper {list-style-image: url(../Images/stormtrooper.png);}
+#wrapper {width: 800px;
+		margin: auto;
+		background-color: #000000;
+		box-shadow: 5px 5px 5px #ffffff;}
+a {cursor: crosshair;}
+a {	box-shadow: inset 0 0 0 0 gold;
+	color: gold;
+	transition: color .2s ease-in-out, box-shadow .2s ease-in-out;}
+a:hover {box-shadow: inset 1000px 0 0 0 gold;
+		color: gold;}	
+h1, h2 {text-align: center;
+		background-color: #000000; 
+		color: #ffffff;
+		text-transform: uppercase;
+		line-height: 150%;
+		word-spacing: 1.5 em;
+		border-width: 3x;
+		border-style: solid;
+		border-color: #000000;
+		background-image: url(../Images/blackdots.gif);
+		background-position: center;
+		background-repeat: repeat;
+		opacity: 0.9;}
+nav {float: left;
+	width: 140px;
+	padding: 0;}
+nav ul {list-style-type: none;
+		margin: 0;
+		padding: 0;} 
+nav a {text-decoration: none;
+		padding: 20px;
+		display: block;
+		background-color: #000000;
+		border-bottom: 1px solid #f2f2f2;
+		background-image: url(../Images/rotating.gif);
+		background-repeat: no-repeat;
+		background-position: center;}
+nav a:link {color: gold;}
+nav a:visited {color: gold;}
+nav a:hover {color: gold;
+			transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+			background-color: #000000;}
+aside {float: right;
+		width: 200px;
+		padding: 10px;
+		color: #ffffff;
+		text-spacing: auto;}
+h3 {border-bottom: 1px solid #f2f2f2;
+	text-align: center;}
+main {margin-left: 140px;
+		margin-right: 220px;
+		background-color: #f2f2f2;
+		padding: 10px;}
+footer {font-size: 0.8em;
+		text-align: center;
+		text-transform: uppercase;}
+img {width: 400px;
+	display: block;
+	margin: auto;}
+@media only screen and (max-width: 1024px) {
+	main {margin-left: 0;}
+	nav {float: none;
+		width: auto;
+		text-align: center;}
+	body {margin:0;
+			font-size: 0.9em;}
+	#wrapper {width: auto;}
+	h1, h2 {font-size: 150%;}
+	img {width: 300px;
+}
+@media only screen and (max-width: 768px) {
+	main {margin-right: 0;}
+	aside {float: none;
+		width: auto;
+		text-align: center;}
+	h1, h2 {font-size: 120%;}
+	image {width: 200px;}
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1-24</title>
+</head>
+<body>
+<header>
+	<h1>GGC Web Design</h1>
+</header>
+<nav>
+<b><a href = "1-24.html">Home</a> &nbsp;&nbsp; 
+<a href = "1-24Demo.html">Demonstration</a> &nbsp;&nbsp; 
+Service Teams &nbsp;&nbsp; 
+Contact</b>
+</nav>
+<main>
+</main>
+<h2>Web &amp; Animation Design</h2>
+<p>GGC Web Design will design web sites and 
+animations fitting your business needs.</p>
+
+<h2>Our Services</h2>
+<dl>
+	<b><dt>Website Design</dt></b>
+		<dd>We design web sites customized for your business model.</dd>
+	<b><dt>Animation Design</dt></b>
+		<dd>We make our animations attractive!</dd>
+	<b><dt>Search Engine Optimization (SEO)</dt></b>
+		<dd>We will get your website noticed by:</dd>
+		<ul>
+			<li><a href ="https://www.google.com/" 
+			target = "_blank">Google</a></li>
+			<li><a href = "https://www.bing.com/"
+			target = "_blank">Bing</a></li>
+		</ul>
+</dl>
+
+<!-- Address part -->
+<div>
+	4321 Peach Road<br>
+	Lawrenceville, GA 30043<br>
+	<b><i>888-888-8888</i></b><br>
+</div>
+
+</main>
+
+<br>
+
+<footer>
+	Copyright &copy; 2023 GGC Web Design<br>
+	<a href = "malito:contact@ggcweb.com">contact@ggcweb.com</a><br>
+</footer>
+
+</main>
+</body>
+</html>

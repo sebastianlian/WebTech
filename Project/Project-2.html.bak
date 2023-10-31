@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project-2</title>
+	<link href = "Project-2.css" rel = "stylesheet">
+</head>
+<body>
+<div id = "wrapper">
+<nav>
+	<ul>
+		<li><a href = "Project-2.html">Home</a></li>
+		<li><a href = "http://scarmagnola.epizy.com/">Index</a></li>
+		<li><a href = "#experience">Experience</a></li>
+		<li><a href = "#coursework">Relevant Coursework</a></li>
+		<li><a href = "#projects">Projects</a></li>
+		<li><a href = "#skills">Skills</a></li>
+	</ul>
+</nav>
+<aside>
+	<h3>Objective</h3>
+	<div class = "self">
+		<img src = "../Images/me.jpg">
+	</div>
+	<p>Software development major seeking to obtain real-world experience in the field and develop programming skills. Throughout my coursework, I have developed a passion for coding and mastering new technology. Eager and willing to learn and take on additional responsibilities throughout an internship, part-time position, or full-time position.</p>
+	<h3>Contact</h3>
+	<div class = "contact">
+	123 Main Street<br>
+	Atlanta, Georgia 30078<br>
+	<a href = "tel:929-123-4567">(929)-123-4567</a><br>
+	<a href = "mailto:scarmagnola@ggc.edu">scarmagnola@ggc.edu</a></li><br>
+	</ul>
+	</div>
+</aside>
+<main>
+<header>
+	<h1 id = "top">Sebastian L. Carmagnola</h1>
+</header>
+<picture>
+	<source media = "(min-width: 1024px)" srcset = "../Images/fractual.gif">
+	<source media = "(min-width: 768px)" srcset = "../Images/dotsloop.gif">
+	<img src = "../Images/hexagon.gif">
+</picture>
+<h2>Education</h2>
+<div>
+<u>Georgia Gwinnett College</u>
+<dl>
+	<dt>In progress: Bachelor of Science in IT Software Development</dt>
+		<dd>Dean's List 2022</dd>
+		<dd>Expected graduation: 2025</dd>
+		<dd>Current GPA 3.5</dd>
+	</dt>
+</dl>
+<u>CUNY Borough of Manhattan Community College</u>
+<dl>
+	<dt>Associate in Liberal Arts</dt>
+		<dd>Phi Theta Kappa Honor Roll</dd>
+		<dd>Dean's List 2014, 2015 and 2016</dd>
+</dl>
+</div>
+<div>
+<div class = "darthvader">
+<h2 id = "coursework">Relevant Coursework</h2>
+<u>Completed Coursework</u>
+<ul type = 'bullet'>
+	<li>Programming Fundamentals</li>
+	<li>Professional Practice & Ethics</li>
+	<li>Introduction to Networking</li>
+	<li>Introduction to Information Systems</li>
+	<li>Introduction to Computing</li>
+	<li>Digital Media</li>
+</ul>
+<u>In Progress Coursework</u>
+<ul type = 'bullet'>
+	<li>Computer Graphics & Media</li>
+	<li>Intermediate Programming</li>
+	<li>Web Technologies</li>
+	<li>Introduction to Databases</li>
+</ul>
+</div>
+<h2 id = "projects">Projects</h2>
+<dl>
+	<dt class = "Project 1">Creation of Website</dt>
+		<dd><a href = "http://scarmagnola.epizy.com/"
+			target = "_blank">Project 1</a>
+			- Designed a website from scratch using HTML5 and CSS.</dd>
+	<dt class = "Project 2">Creation of Digital Resume</dt>
+		<dd><a href = "../Project/Project-2.html"
+			target = "_blank">Project 2</a>
+			- Designed a digital resume website from scratch using HTML5 and CSS.</dd>
+</dl>
+<h2 id = "experience">Experience</h2>
+<u>Carma Tire Shop & Muffler Corp.</u>
+<dl>
+	<dt>Office Assistant<br>
+	June 2021 to Present</dt>
+			<dd>Providing customer service</dd>
+			<dd>Record keeping</dd>
+			<dd>Inventory management and ordering</dd>
+			<dd>Troubleshooting technical issues</dd>
+	</dt>
+</dl>
+<br>
+<u>Whole Foods Market</u>
+<dl>
+	<dt>Whole Body Order Writer<br>
+	June 2018 to May 2020</dt>
+			<dd>Provided customer service</dd>
+			<dd>Created promotional endcaps </dd>
+			<dd>Inventory management and ordering</dd>
+			<dd>Analyzed daily sales</dd>
+			<dd>Maintained updated tags</dd>
+	</dt>
+	<dt>Whole Body Team Member<br>
+	March 2018 to June 2018</dt>
+			<dd>Provided customer service</dd>
+			<dd>Shadowed leadership in ordering techniques</dd>
+			<dd>Assisted in placing orders</dd>
+	</dt>
+</dl>
+<br>
+<div class = "stormtrooper">
+<h2 id = "skills">Skills</h2>
+<ul type = "bullet">
+	<li>Bilingual - Spanish</li>
+	<li>Sales </li>
+	<li>Customer service</li>
+	<li>Inventory management</li>
+	<li>Adobe Camera Raw</li>
+	<li>Adobe Photoshop</li>
+	<li>Basic HTML5</li>
+	<li>Basic CSS</li>
+	<li>Beginner Python</li>
+	<li>Intermediate Java</li>
+	<li>MS Office programs</li>
+</ul>
+</div>
+<div class = "top">
+<a href = "#top">Back to top</a>
+</div>
+<br>
+<footer>
+	Copyright &copy; Sebastian Lian Carmagnola 2023
+</footer>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3-14</title>
+	<style>
+		th {text-align: right;}
+		fieldset {width: 500px;
+				border: 2px ridge #eaeaea;
+				padding: 10px;}
+		legend {font-weight: bold;}
+	</style>
+</head>
+<body>
+<h1>IT Student Club Registration</h1>
+<p>Required fields are marked with an asterisk(*)</p>
+<form method = "post" action = "3-14.php">
+<fieldset>
+<legend>Personal Information</legend>
+<table>
+<tr>
+<th>*Student ID:</th> <td><input type = "text" placeholder = "e.g. 900xxxxx" maxlength = "9" minlength = "9" required = "required" name = "StudentID"></td>
+</tr>
+<tr>
+<th>*Password ID:</th> <td><input type = "password" required = "required" name = "Password"></td>
+</tr>
+<tr>
+<th>*Retype Password:</th> <td><input type = "password" required = "required" name = "RetypePassword"></td>
+</tr>
+<tr>
+<th>*E-mail:</th> <td><input type = "email" required = "required" name = "Email"></td>
+</tr>
+<tr>
+<th>First Name:</th> <td><input type = "text" name = "FirstName"></td>
+</tr>
+<tr>
+<th>Last Name:</th> <td><input type = "text" name = "LastName"></td>
+</tr>
+<tr>
+<th>Phone Number:</th> <td><input type = "tel" name = "PhoneNumber"></td>
+</tr>
+<tr>
+<th>Street:</th> <td><input type = "text" name = "Street"></td>
+<tr>
+<th>City:</th> <td><input type = "text" name = "City"></td>
+</tr>
+<tr>
+<th>State:</th> <td><input type = "text" maxlength = "2" name = "State"></td>
+</tr>
+<tr>
+<th>Zip Code:</th> <td><input type = "text" maxlength = "5" name = "ZipCode" ></td>
+</tr>
+<tr>
+<th>Level:</th> <td>
+<select size = "1" name = "Level">
+	<option>Choose your level at GGC:</option>
+	<option value = "Freshmen">Freshmen</option>
+	<option value = "Sophmore">Sophmore</option>
+	<option value = "Junior">Junior</option>
+	<option value = "Senior">Senior</option>
+</select>
+</td>
+</tr>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<legend>IT Preferences</legend>
+<input id = "ownComputer" type = "checkbox" value = "yes" name = "ownComputer"> <label for = "ownComputer"> I own a computer.</label><br><br>
+
+How long do you use a computer a day?<br>
+<input id = "t1" type = "radio" name = "time" value = "0-2 hours"> <label for = "t1">0-2 hours</label><br>
+<input id = "t2" type = "radio" name = "time" value = "2-5 hours"> <label for = "t2">2-5 hours</label><br>
+<input id = "t3" type = "radio" name = "time" value = "5+ hours"> <label for = "t3">5+ hours</label><br><br>
+
+Which web browsers do you use? (you can pick more than one answer)<br>
+<input id = "firefox" type = "checkbox" value = "yes" name = "firefox"> <label for = "firefox">Firefox</label><br>
+<input id = "chrome" type = "checkbox" value = "yes" name = "chrome"> <label for = "chrome">Chrome</label><br>
+<input id = "safari" type = "checkbox" value = "yes" name = "safari"> <label for = "safari">Safari</label><br>
+
+What is your major concentration?<br>
+<select size = "5" name = "major">
+	<option value = "DM">DM</option>
+	<option value = "ES">ES</option>
+	<option value = "SS">SS</option>
+	<option value = "SD">SD</option>
+	<option value = "DA">DA</option>
+</select>
+</fieldset>
+<br>
+<input type = "submit" value = "Register">
+<input type = "reset">
+</form>
+
+</body>
+</html>

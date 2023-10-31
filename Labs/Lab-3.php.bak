@@ -1,0 +1,41 @@
+<?php
+	echo "<h2>Thank you for taking the survey</h2><br>";
+	echo "<h3>Below are your answers to the survey questions:</h3><br>";
+	
+	echo "<h2>1. Demographics Information</h2><br>";
+	echo "Your gender: " . $_POST["gender"] . "<br>";
+	echo "Your age: " . $_POST["age"] . "<br>";
+	echo "Your level: " . $_POST["level"] . "<br>";
+	echo "Your school: " . $_POST["school"] . "<br>";
+	
+	echo "<h2>2. How do you evaluate your security knowledge:</h2><br>";
+	echo "You chose: " . $_POST["know"] . "<br>";
+	
+	echo "<h2>3. Have your computers been affected by virus before:</h2><br>";
+	echo "You responded: " . $_POST["virus"] . "<br>";
+	
+	echo "<h2>4. What anti-virus software do you usually use:</h2><br>";
+
+	if (isset($_POST["norton"]) && $_POST["norton"] == "yes") {
+		echo "Norton ";
+	}
+	if (isset($_POST["mcafee"]) && $_POST["mcafee"] == "yes") {
+		echo "McAfee ";
+	}
+	if (isset($_POST["avast"]) && $_POST["avast"] == "yes") {
+		echo "Avast ";
+	}
+	if (isset($_POST["kaperski"]) && $_POST["kaperski"] == "yes") {
+		echo "Kaperski ";
+	}
+	if (isset($_POST["other"]) && $_POST["other"] == "yes") {
+		echo "Other ";
+	}
+	
+	echo "<br>";
+	
+	echo "<h2>5. You rated:</h2><br>";
+	echo "I know how to create a strong password: " . $_POST["password"] .  "<br>";
+	echo "I know how to remove malware from my computer: " . $_POST["malware"] .  "<br>";
+	echo "I know how to secure my wireless network at home: " . $_POST["malware"] .  "<br>";
+?>

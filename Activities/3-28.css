@@ -1,0 +1,130 @@
+h2 {width: 250px;
+	background-color: #57ba98;
+	color: #f2f2f2;
+	padding: 10px;
+	transition: width 2s;}
+h2:hover {width: 300px;}
+video {width: 300px;
+		height: 300px;}
+img {width: 200px;
+		transition: width 2s;}
+img:hover {width: 300px;}
+nav {background-color: #57ba98;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	font-size: 1.5em;
+	color: #f2f2f2;}
+nav ul {list-style-type: none;
+		margin: 0;}
+nav li {padding: 0.5em;
+		display: inline-block;}
+nav a {text-decoration: none;
+		display: block;}
+nav ul ul {position: absolute;
+			background-color: #65ccb8;
+			padding: 0;
+			text-align: left;
+			display: none;}
+nav ul ul li {display: block;
+				border-bottom: 1px solid #f2f2f2;
+				width: 8em;
+				padding-left: 1em;
+				margin-left: 0;}
+nav li:hover ul {display: block;}
+nav a:link {color: #f2f2f2;}
+nav a:visited {color: #cd853f;}
+nav a:hover{color: #ffe4b5;}
+
+#div1 {width: 100px;
+		height: 100px;
+		background-color: yellow;
+		color: black;
+		font-size: 1.5em;
+		text-align: center;
+		border: 5px solid black;
+		box-shadow: 5px 5px 5px blue, 10px 10px 5px red, 15px 15px 5px green;
+		transition: background-color 2s, color 2s, border 2s, box-shadow 2s;}
+#div1:hover {background-color: black;
+			color: yellow;
+			border: 5px dashed yellow;
+			box-shadow: -5px -5px 5px blue, -10px -10px 5px red, -15px -15px 5px green;}
+#div2 {width: 100px;
+		height: 100px;
+		background-image: url(../Images/flower.jpg);
+		background-size: 100%;
+		transition: border-radius 2s;}
+#div2:hover {border-radius: 50px;}
+#div3 {width: 100px;
+		height: 100px;
+		background-image: url(../Images/basketball.png);
+		background-size: 100%;
+		transition: margin-top 2s, margin-left: 2s;}
+#div3:hover {margin-top: 200px;
+			margin-left: 200px;}
+#div4 {width: 100px;
+		height: 100px;
+		background-image: url(../Images/pig.jpg);
+		background-size: 100%;
+		transition: transform 2s, width 2s, height 2s;}
+#div4:hover {transform: rotate(720deg);
+			width: 200px;
+			height: 200px;}
+#div5 {width: 100px;
+		height: 100px;
+		background-image: url(../Images/house.png);
+		background-size: 100%;
+		transition: transform 2s;}
+#div5:hover {transform: rotateZ(90deg);}
+#div6 {transition: color 2s, font-size 2s, font-weight 2s;}
+#div6:hover {color: red;
+			font-size: 3em;
+			font-weight: bold;}
+#div7 {width: 100px;
+		height: 100px;
+		background-color: red);
+		position: relative;
+		animation-name: move1;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;}
+@keyframes move1 {
+	0% {top: 0px; left: 0px; background-color: red;}
+	25% {top: 0px; left: 100px; background-color: blue;}
+	50% {top: 100px; left: 100px; background-color: yellow;}
+	75% {top: 100px; left: 0px; background-color: green;}
+	100% {top: 0px; left: 0px; background-color: red;}
+}
+#div8 {width: 100px;
+		height: 100px;
+		background-image: url(../Images/basketball.png);
+		background-size: 100%;
+		border-radius: 50%;
+		position: fixed;
+		animation: move2 2s infinite;
+		animation-timing-function: linear;}
+@keyframes move2 {
+	0% {top: 45%; left: 0%; transform: rotateZ(0deg);}
+	25% {top: 0%; left: 45%; transform: rotateZ(90deg);}
+	50% {top: 45%; left: 90%; transform: rotateZ(180deg);}
+	75% {top: 90%; left: 45%; transform: rotateZ(270deg);}
+	100% {top: 45%; left: 0%; transform: rotateZ(360deg);}
+}
+
+#div9 {width: 150px;
+		height: 150px;
+		background-image: url(../Images/crestie.png);
+		background-size: 100%;
+		border-radius: 90%;
+		position: relative;
+		animation: move3 5s infinite;
+		animation-timing-function: linear;}
+#div9:hover {width: 300px;
+			height: 300px}
+@keyframes move3 {
+	0% {top: 0%; left: 45%; transform: rotateZ(0deg);}
+	25% {top: 45%; left: 0%; transform: rotateZ(90deg);}
+	50% {top: 90%; left: 45%; transform: rotateZ(90deg);}
+	75% {top: 45%; left: 90%; transform: rotateZ(45deg);}
+	100% {top: 0%; left: 45%; transform: rotateZ(720deg);}
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab-3</title>
+	<style>
+		th {text-align: center;
+			padding: 10px;}
+		h4 {color:#0066ff;}
+		table {width: 600px;
+				border: 1px solid white;
+				border-collapse: separate;
+				border-spacing: 5px;}
+		.altrow {background-color: #eaeaea;}
+	</style>
+</head>
+<body>
+<h2>Information Security Awareness Survey</h2>
+<form method = "post" action ="Lab-3.php">
+<h4>1. Demographics Information</h4>
+Gender: <input type = "text" list = "gender" name = "gender"><br>
+<datalist id = "gender">
+	<option label = "Male" value = "Male">
+	<option label = "Female" value = "Female">
+	<option label = "Do not want to tell" value = "Do not want to tell">
+</datalist>
+<br>
+
+Age: <input type = "number" min = "1" max = "99" name = "age"><br>
+
+Level: 
+<select size = "1" name = "level">
+	<option>Choose your level at GGC:</option>
+	<option value = "Freshmen">Freshmen</option>
+	<option value = "Sophmore">Sophmore</option>
+	<option value = "Junior">Junior</option>
+	<option value = "Senior">Senior</option>
+</select>
+<br>
+
+School: <input type ="text" list = "schoolList" name = "school"><br>
+<datalist id = "schoolList">
+	<option label = "SST" value = "SST">
+	<option value = "SB" value = "SB">
+	<option value = "SE" value = "SE">
+	<option value = "SLA" value = "SLA">
+</datalist>
+<br>
+
+<h4>2. How do you evaluate your securty knowledge?</h4>
+Choose a score between 1 and 100:
+<br>
+1<input type = "range" min = "1" max = "100" name = "know">100<br>
+
+<h4>3. Have your computers been infected by a virus before?</h4>
+<input type = "radio" id = "yes" name = "virus" value = "yes"> <label for = "yes">Yes</label>
+<input type = "radio" id = "no" name = "virus" value = "No"> <label for = "no">No</label><br>
+
+<h4>4. What anti-virus software do you usually use (you can pick more than one answer)?</h4>
+<br>
+<input id = "norton" type = "checkbox" value = "yes" name = "norton"> <label for = "norton">Notron </label><br>
+<input id = "mcafee" type = "checkbox" value = "yes" name = "mcafee"> <label for = "mcafee">McAfee </label><br>
+<input id = "kasperski" type = "checkbox" value = "yes" name = "kasperski"> <label for = "kasperski">Kasperski </label><br>
+<input id = "other" type = "checkbox" value = "yes" name = "other"> <label for = "other">Other </label><input type = "text" value ="Please input other software"><br>
+
+<h4>5. Please rate the following questions from strongly disagree to strongly agree:</h4>
+<table id = "table">
+<tr class = "altrow">
+	<th>Questions:</th>
+	<th>Strongly Disagree</th>
+	<th>Disagree</th>
+	<th>Neutral</th>
+	<th>Agree</th>
+	<th>Strongly Agree</th>
+</tr>
+<tr>
+	<td>I know how to create a strong password</td>
+	<th><input type = "radio" id = "q1sd" name = "password" value = "Strongly Disagree"></th>
+	<th><input type = "radio" id = "q1d" name = "password" value = "Disagree"></th>
+	<th><input type = "radio" id = "q1n" name = "password" value = "Neutral"></th>
+	<th><input type = "radio" id = "q1a" name = "password" value = "Agree"></th>
+	<th><input type = "radio" id = "q1sa" name = "password" value = "Strongly Agree"></th>
+</tr>
+
+<tr class = "altrow">
+	<td>I know how to remove malware from my computer</td>
+	<th><input type = "radio" id = "q2sd" name = "malware" value = "Strongly Disagree"></th>
+	<th><input type = "radio" id = "q2d" name = "malware" value = "Disagree"></th>
+	<th><input type = "radio" id = "q2n" name = "malware" value = "Neutral"></th>
+	<th><input type = "radio" id = "q2a" name = "malware" value = "Agree"></th>
+	<th><input type = "radio" id = "q2sa" name = "malware" value = "Strongly Agree"></th>
+</tr>
+
+<tr>
+	<td>I know how to secure my wireless network at home</td>
+	<th><input type = "radio" id = "q3sd" name = "network" value = "Strongly Disagree"></th>
+	<th><input type = "radio" id = "q3d" name = "network" value = "Disagree"></th>
+	<th><input type = "radio" id = "q3n" name = "network" value = "Neutral"></th>
+	<th><input type = "radio" id = "q3a" name = "network" value = "Agree"></th>
+	<th><input type = "radio" id = "q3sa" name = "network" value = "Strongly Agree"></th>
+</tr>
+</table>
+
+<input type = "submit">
+<input type = "reset">
+</form>
+</body>
+</html>
